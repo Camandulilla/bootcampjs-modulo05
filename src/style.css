@@ -23,17 +23,21 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.contenedorCarta {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.contenedorCarta img {
+  display: flex;
+  justify-items: center;
+  margin: auto;
+  border-radius: 20px;
 }
 
 #app {
@@ -64,12 +68,77 @@ h1 {
   color: #888;
 }
 
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#cajaPuntos {
+  background-color: indigo;
+  color: white;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#puntuacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  font-weight: bold;
+}
+
+#dameCarta {
+  display: flex;
+  background-color: gold;
+  color: indigo;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#dameCarta:disabled {
+  background-color: gray;
+  color: #ccc;
+}
+
+#plantarse {
+  display: flex;
+  background-color: gold;
+  color: indigo;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nuevaPartida {
+  display: flex;
+  background-color: gold;
+  color: indigo;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contenedorBotones {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 3%;
+}
+
+#gameover {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: bold;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
